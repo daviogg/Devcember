@@ -8,13 +8,11 @@ public class ItemDisplay : MonoBehaviour {
     public Item item;
 
     public Text nameText;
-    public Image artwork;
-
-
 
 	void Start () {
+
         nameText.text = item.name;
-        artwork.sprite = item.artwork;
+        gameObject.GetComponent<Image>().sprite = item.artwork;
 	}
 	
 }
