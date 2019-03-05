@@ -5,13 +5,13 @@ using UnityEngine.EventSystems;
 
 public class DragObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHandler
 {
-    public static GameObject itemBeginDragged;
+    public static GameObject itemBeingDragged;
     Vector3 startPosition;
     Transform startParent;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
-        itemBeginDragged = gameObject;
+        itemBeingDragged = gameObject;
         startPosition = transform.position;
         startParent = transform.parent;
         GetComponent<CanvasGroup>().blocksRaycasts = false;
@@ -24,7 +24,7 @@ public class DragObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnEndDrag(PointerEventData eventData)
     {
-        itemBeginDragged = null;
+        itemBeingDragged = null;
         GetComponent<CanvasGroup>().blocksRaycasts = true;
         if (transform.parent != startParent)
         {

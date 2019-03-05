@@ -40,9 +40,8 @@ GameObject:
   - component: {fileID: 114591822175540826}
   - component: {fileID: 114588848212043720}
   - component: {fileID: 23169986780547578}
-  - component: {fileID: 225273908097496654}
   m_Layer: 5
-  m_Name: Fire
+  m_Name: Wood
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -115,7 +114,9 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: Fuoco
+  m_Text: 'Legno
+
+'
 --- !u!114 &114588848212043720
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,7 +128,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c61d4636d16ddc46a7f592f8a4e7a85, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  item: {fileID: 11400000, guid: 2084d814234f74748af69390c887243f, type: 2}
+  item: {fileID: 11400000, guid: 4268fa328a731fd449671b80e62980de, type: 2}
   nameText: {fileID: 114533169573297896}
 --- !u!114 &114591822175540826
 MonoBehaviour:
@@ -207,14 +208,3 @@ RectTransform:
   m_AnchoredPosition: {x: -0.0000012814999, y: -30.85}
   m_SizeDelta: {x: 65.42, y: 16.39}
   m_Pivot: {x: 0.5, y: 0.5}
---- !u!225 &225273908097496654
-CanvasGroup:
-  m_ObjectHideFlags: 1
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 1376033388739308}
-  m_Enabled: 1
-  m_Alpha: 1
-  m_Interactable: 1
-  m_BlocksRaycasts: 1
-  m_IgnoreParentGroups: 0
