@@ -19,6 +19,7 @@ public class DragObject : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDr
 
     public void OnDrag(PointerEventData eventData)
     {
+        //transform.localScale = startParent.transform.localScale;
         transform.position = Input.mousePosition;
     }
 
