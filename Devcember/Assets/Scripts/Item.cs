@@ -7,6 +7,6 @@ using UnityEngine.EventSystems;
 public class Item : ScriptableObject
 {
 
-    public new string itemName;
+    public string itemName;
     public Sprite artwork;
 }
